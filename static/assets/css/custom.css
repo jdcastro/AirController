@@ -17,3 +17,128 @@ aside#adminmenu {
 aside#adminmenu a {
     color: #fff;
 }
+/* toogle menu */
+@media screen and (min-width: 803px) {
+    #lateral input#openSidebarMenu[type=checkbox], #lateral label.sidebarIconToggle {
+      display: none;
+    }
+    #lateral ul.nav {
+      display: inline-flex;
+    }
+  }
+  ul.nav {
+    margin: auto 0;
+  }
+  ul.nav li.btn {
+    display: inline;
+    float: right;
+    margin: 0 7px;
+  }
+  ul.nav li.btn a {
+    padding: 2px 16px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FDF9F9;
+    border: 1px solid rgba(230, 230, 230, 0.7);
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.7em;
+    line-height: 1.5;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: none;
+    color: #757575;
+  }
+  ul.nav li.btn a:hover, ul.nav li.btn a:active {
+    background: linear-gradient(180deg, #00a2b2 0%, rgb(63, 84, 115) 100%), #ffffff;
+    color: #FFF;
+    border-color: gainsboro;
+  }
+  
+  @media screen and (max-width: 802px) {
+    #lateral ul.nav li.btn a {
+      max-width: 87%;
+    }
+    #lateral ul.nav {
+      height: 100%;
+      position: fixed;
+      left: 0;
+      width: 250px;
+      margin-top: 82px;
+      transform: translateX(-290px);
+      transition: transform 250ms ease-in-out;
+      background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
+    }
+    #lateral ul.nav li.btn {
+      float: none;
+    }
+    #lateral input[type=checkbox]:checked ~ ul.nav {
+      transform: translateX(0);
+    }
+    #lateral .sidebarIconToggle {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      cursor: pointer;
+      position: absolute;
+      z-index: 99;
+      height: 100%;
+      width: 100%;
+      top: 33px;
+      right: 33px;
+      height: 33px;
+      width: 33px;
+    }
+    #lateral .spinner {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background-color: #FC466B;
+    }
+    #lateral .horizontal {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      margin-top: 4px;
+    }
+    #lateral .diagonal.part-1 {
+      position: relative;
+      transition: all 0.3s;
+      box-sizing: border-box;
+      float: left;
+    }
+    #lateral .diagonal.part-2 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      margin-top: 4px;
+    }
+    #lateral input#openSidebarMenu[type=checkbox] {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      display: none;
+    }
+    #lateral input#openSidebarMenu[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      opacity: 0;
+    }
+    #lateral input#openSidebarMenu[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      transform: rotate(135deg);
+      margin-top: 10px;
+    }
+    #lateral input#openSidebarMenu[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      transform: rotate(-135deg);
+      margin-top: -11px;
+    }
+  }
+  
