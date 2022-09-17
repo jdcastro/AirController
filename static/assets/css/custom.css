@@ -19,65 +19,36 @@ aside#adminmenu a {
 }
 /* toogle menu */
 @media screen and (min-width: 803px) {
-    #lateral input#openSidebarMenu[type=checkbox], #lateral label.sidebarIconToggle {
+    input#openSidebarMenu[type=checkbox], label.sidebarIconToggle {
       display: none;
     }
-    #lateral ul.nav {
+    #lateral {
       display: inline-flex;
     }
   }
-  ul.nav {
-    margin: auto 0;
-  }
-  ul.nav li.btn {
-    display: inline;
-    float: right;
-    margin: 0 7px;
-  }
-  ul.nav li.btn a {
-    padding: 2px 16px;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FDF9F9;
-    border: 1px solid rgba(230, 230, 230, 0.7);
-    box-sizing: border-box;
-    border-radius: 3px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.7em;
-    line-height: 1.5;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration-line: none;
-    color: #757575;
-  }
-  ul.nav li.btn a:hover, ul.nav li.btn a:active {
-    background: linear-gradient(180deg, #00a2b2 0%, rgb(63, 84, 115) 100%), #ffffff;
-    color: #FFF;
-    border-color: gainsboro;
-  }
-  
+
   @media screen and (max-width: 802px) {
-    #lateral ul.nav li.btn a {
+    .navbar-brand .navbar-item {margin-left: 12vw;}
+    #lateral #adminmenu {
       max-width: 87%;
     }
-    #lateral ul.nav {
+    #lateral {
       height: 100%;
       position: fixed;
       left: 0;
-      width: 250px;
-      margin-top: 82px;
-      transform: translateX(-290px);
+      width: 60vw;
+      min-width: 320px;
+      margin: 0px;
+      transform: translateX(-100vw);
       transition: transform 250ms ease-in-out;
-      background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
     }
-    #lateral ul.nav li.btn {
+    #lateral {
       float: none;
     }
-    #lateral input[type=checkbox]:checked ~ ul.nav {
-      transform: translateX(0);
+    input.openSidebarMenu[type=checkbox]:checked ~ #lateral {
+      transform: translateX(-1vw);
     }
-    #lateral .sidebarIconToggle {
+    .sidebarIconToggle {
       transition: all 0.3s;
       box-sizing: border-box;
       cursor: pointer;
@@ -85,12 +56,12 @@ aside#adminmenu a {
       z-index: 99;
       height: 100%;
       width: 100%;
-      top: 33px;
-      right: 33px;
+      top: 22px;
+      left: 22px;
       height: 33px;
       width: 33px;
     }
-    #lateral .spinner {
+     .spinner {
       transition: all 0.3s;
       box-sizing: border-box;
       position: absolute;
@@ -98,43 +69,43 @@ aside#adminmenu a {
       width: 100%;
       background-color: #FC466B;
     }
-    #lateral .horizontal {
+    .horizontal {
       transition: all 0.3s;
       box-sizing: border-box;
       position: relative;
       float: left;
       margin-top: 4px;
     }
-    #lateral .diagonal.part-1 {
+    .diagonal.part-1 {
       position: relative;
       transition: all 0.3s;
       box-sizing: border-box;
       float: left;
     }
-    #lateral .diagonal.part-2 {
+    .diagonal.part-2 {
       transition: all 0.3s;
       box-sizing: border-box;
       position: relative;
       float: left;
       margin-top: 4px;
     }
-    #lateral input#openSidebarMenu[type=checkbox] {
+    input#openSidebarMenu[type=checkbox] {
       transition: all 0.3s;
       box-sizing: border-box;
       display: none;
     }
-    #lateral input#openSidebarMenu[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    input#openSidebarMenu[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
       transition: all 0.3s;
       box-sizing: border-box;
       opacity: 0;
     }
-    #lateral input#openSidebarMenu[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    input#openSidebarMenu[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
       transition: all 0.3s;
       box-sizing: border-box;
       transform: rotate(135deg);
       margin-top: 10px;
     }
-    #lateral input#openSidebarMenu[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    input#openSidebarMenu[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
       transition: all 0.3s;
       box-sizing: border-box;
       transform: rotate(-135deg);
