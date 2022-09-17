@@ -1,0 +1,19 @@
+
+#nav-box {
+    background-color:rgb(214 227 243); margin:0; padding:0 20px;}
+.hero.is-info {
+    background-color: #636e80;
+    color: #fff;
+}
+.navbar-item img {
+    max-height: 79px;
+    max-width: 160px;
+}
+aside#adminmenu {
+    background-color: black; 
+    color: #fff;
+    padding: 25px 25px 15px 25px;
+}
+aside#adminmenu a {
+    color: #fff;
+}
