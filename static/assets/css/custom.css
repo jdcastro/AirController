@@ -22,9 +22,6 @@ aside#adminmenu a {
     input#openSidebarMenu[type=checkbox], label.sidebarIconToggle {
       display: none;
     }
-    #lateral {
-      display: inline-flex;
-    }
   }
 
   @media screen and (max-width: 802px) {
@@ -34,6 +31,7 @@ aside#adminmenu a {
     }
     #lateral {
       height: 100%;
+      z-index: 99999;
       position: fixed;
       left: 0;
       width: 60vw;
