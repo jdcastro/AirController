@@ -24,33 +24,33 @@ def index():
     return render_template('dashboard/default.html')
 
 @app.route('/vuelos')
-def index():
+def vuelos():
     return render_template('dashboard/default.html')
 
 @app.route('/ayuda')
-def index():
+def ayuda():
     return render_template('dashboard/default.html')
 
 @app.route('/contacto')
-def index():
+def contacto():
     return render_template('dashboard/default.html')
 
 @app.route('/politicas-privacidad')
-def index():
+def politicas_privacidad():
     return render_template('dashboard/default.html')
 
 @app.route('/acceso')
-def index():
+def acceso():
     return render_template('dashboard/default.html')
 
 @app.route('/acceso/registro')
-def index():
+def registro():
     return render_template('dashboard/default.html')
 
 @app.route('/acceso/recuperar-clave')
-def index():
+def recuperar_clave():
     return render_template('dashboard/default.html')
 
 @app.route('/dashboard')
-def index():
+def dashboard():
     return render_template('dashboard/default.html')
