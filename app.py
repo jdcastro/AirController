@@ -1,11 +1,11 @@
 from flask import (
     Blueprint, Flask, flash, g, redirect, render_template, request, session, url_for
 )
-import jinja_partials
+# import jinja_partials
 
 app = Flask(__name__)
 
-jinja_partials.register_extensions(app)
+# jinja_partials.register_extensions(app)
 
 @app.after_request
 def add_header(r):

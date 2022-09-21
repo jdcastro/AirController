@@ -1,60 +1,60 @@
 <nav class="navbar is-light" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <img src="{{ url_for('static', filename='assets/img/logo-160x80.png') }}" alt="Air Controller logo">
-      </a>
+        <a class="navbar-item" href="/">
+            <img src="{{ url_for('static', filename='assets/img/' + logo) }}" alt="Air Controller logo">
+        </a>
 
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarPrincipal">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarPrincipal">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
     </div>
 
     <div id="navbarPrincipal" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="/">
-          Inicio
-        </a>
+        <div class="navbar-start">
+            <a class="navbar-item" href="/">
+                Inicio
+            </a>
 
-        <a class="navbar-item" href="/vuelos">
-          Vuelos
-        </a>
+            <a class="navbar-item" href="/vuelos">
+                Vuelos
+            </a>
 
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Otros
-          </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    Otros
+                </a>
 
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              Nuestra Empresa
-            </a>
-            <a class="navbar-item">
-              Vuelos
-            </a>
-            <a class="navbar-item">
-              Contactanos
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item">
-              Reporta un inconveniente
-            </a>
-          </div>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        Nuestra Empresa
+                    </a>
+                    <a class="navbar-item">
+                        Vuelos
+                    </a>
+                    <a class="navbar-item">
+                        Contactanos
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                        Reporta un inconveniente
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Registro</strong>
-            </a>
-            <a class="button is-light">
-              Ingreso
-            </a>
-          </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary">
+                        <strong>Registro</strong>
+                    </a>
+                    <a class="button is-light">
+                        Ingreso
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </nav>
+</nav>
