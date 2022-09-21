@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+{{ render_partial('partials/head.html') }}
+{% endblock head %}
+
+<body>
+
+  {% block header %}
+  <header>
+    {% block nav %}
+    {{ render_partial('partials/nav.html')}}
+    {% endblock nav %}
+  </header>
+  {% endblock header %}
+
+  {% block full_content %}
+
+  <div class="columns is-variable bd-klmn-columns is-1 pb-0 mb-0">
+
+    {% block aside %}
+    {{render_partial('partials/sidebar-admin.html')}}
+    {% endblock aside %}
+
+    <div class="column pb-0 mb-0">
+
+      {% block component %}
+
+      {% endblock component %}
+    </div>
+  </div>
+  </div>
+  </div>
+
+  {% endblock full_content %}
+
+  {% block footer %}
+  {{render_partial('partials/footer.html')}}
+  {% endblock footer %}
+</body>
+
+</html>

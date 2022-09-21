@@ -21,7 +21,7 @@ def add_header(r):
 
 @app.route('/')
 def index():
-    return render_template('dashboard/default.html')
+    return render_template('front/portada.html')
 
 @app.route('/vuelos')
 def vuelos():
