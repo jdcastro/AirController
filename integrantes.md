@@ -2,8 +2,8 @@
 ## NRC 2095 - Grupo 09
 
 ## Inegrantes: 
-Elkin López Barrios
-Daniel Abudinen Ordoñez
-Pedronell Coley Hernandez
-Alfredo Núñez Dickson
-Johnny De Castro Martinez
+* Elkin López Barrios 
+* Daniel Abudinen Ordoñez
+* Pedronell Coley Hernandez
+* Alfredo Núñez Dickson
+* Johnny De Castro Martinez
