@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  
+  
+  <link rel="stylesheet" href="../../static/assets/css/custom.css">
+  <script src="../../static/assets/js/custom.js"></script>
+
+
+
+  <title>Zona de administración  </title>
+</head>
+
+
+<header>
+
+  <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/static/assets/img/logo-160x80.png" alt="Air Controller logo">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarPrincipal">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarPrincipal" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Inicio
+        </a>
+
+        <a class="navbar-item">
+          Documentación
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Otros
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              Nuestra Empresa
+            </a>
+            <a class="navbar-item">
+              Vuelos
+            </a>
+            <a class="navbar-item">
+              Contactanos
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Reporta un inconveniente
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Registro</strong>
+            </a>
+            <a class="button is-light">
+              Ingreso
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+<div class="columns is-variable bd-klmn-columns is-1 pb-0 mb-0">
+
+  
+
+
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+
+  <div class="column is-one-fifth  pb-0 mb-0" id="lateral">
+    <aside class="menu" id="adminmenu">
+      <p class="menu-label">
+        General
+      </p>
+      <ul class="menu-list">
+        <li><a>Dashboard</a></li>
+        <li><a>Customers</a></li>
+      </ul>
+      <p class="menu-label">
+        Administration
+      </p>
+      <ul class="menu-list">
+        <li><a>Team Settings</a></li>
+        <li>
+          <a class="is-active">Manage Your Team</a>
+          <ul>
+            <li><a>Members</a></li>
+            <li><a>Plugins</a></li>
+            <li><a>Add a member</a></li>
+          </ul>
+        </li>
+        <li><a>Invitations</a></li>
+        <li><a>Cloud Storage Environment Settings</a></li>
+        <li><a>Authentication</a></li>
+      </ul>
+      <p class="menu-label">
+        Transactions
+      </p>
+      <ul class="menu-list">
+        <li><a>Payments</a></li>
+        <li><a>Transfers</a></li>
+        <li><a>Balance</a></li>
+      </ul>
+    </aside>
+    
+  </div>
+
+  <div class="column pb-0 mb-0">
+    <!-- ZONA DE TITULO ---------------------------------------------------------------------> 
+        <section class="hero is-primary">
+            <div class="hero-body">
+            <p class="title">COMENTANOS TU EXPERIENCIA</p>
+            <p class="subtitle">Tu experiencia es importante para nosotros</p>
+            </div>
+        </section>
+    
+    
+    
+    
+    
+    <!-- <div class="bd-notification is-primary ">
+      <div class="heading">
+        <h1 class="title">Section</h1>
+        <h2 class="subtitle">
+          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+        </h2>
+      </div>
+      
+      <div class="container is-fluid">
+      </div>
+    </div> -->
+    <!-- FIN ZONA DE TITULO------------------------------------------------------------- -->
+
+    <!-- ZONA DE COMPONENTES------------------------------------------------------------ -->
+    <div class="field">
+        <p>Nos interesa saber sobre tus experiencias en el vuelo <strong>AV-786</strong> realizado el <strong>21 septiembre 2022</strong></p>
+        <label class="label">Mensage</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Ingresa acá tus comentarios y experincias"></textarea>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Acepto Términos y condiciones <a href="#">terms and conditions</a>
+          </label>
+        </div>
+      </div>
+      
+      <div class="field">
+        <p>Quiero recibir notificaciones sobre promociones y consultas</p>
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="question">
+            Si
+          </label>
+          <label class="radio">
+            <input type="radio" name="question">
+            No
+          </label>
+        </div>
+      </div>
+      
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link">Enviar</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Cancelar</button>
+        </div>
+      </div>
+
+    
+        
+
+
+
+
+
+
+    <!-- <div class="columns is-mobile is-centered">
+        <div class="column box is-one-third">
+            <div class="field">
+                <p>Bienvenido... </p>
+                <p class="control has-icons-left has-icons-right">
+                  <input class="input" type="email" placeholder="Email">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control has-icons-left">
+                  <input class="input" type="password" placeholder="Password">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control">
+                  <button class="button is-success">
+                    Login
+                  </button>
+                  <button class="button is-warning">recordar clave</button>
+                </p>
+              </div>
+        </div>
+    </div> -->
+    <!-- FIN ZONA DE COMPONENTES -->
+
+  </div>
+</div>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+      </p>
+      <p>
+        <a class="icon" href="https://github.com/jgthms/bulma">
+          <i class="fa fa-github"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
