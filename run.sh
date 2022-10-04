@@ -1,5 +1,6 @@
 #!/bin/bash
-export FLASK_APP=app.py
+cd app
+export FLASK_APP=__init__.py
 export FLASK_DEBUG=1 
 export TEMPLATES_AUTO_RELOAD=1 
 # export SERVER_NAME=airc.jdcastro.co
