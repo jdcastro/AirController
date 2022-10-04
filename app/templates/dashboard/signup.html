@@ -33,8 +33,11 @@
             <form action="/registrarse" method="post">
 
             {{ field('cc', type='number', placeholder='Documento de identidad', icon='id-card') }}
+            {{ field('nombre', type='text', placeholder='Nombre', icon='signature') }}
+            {{ field('apellido', type='text', placeholder='Apellido', icon='file-signature') }}
             {{ field('email', type='mail', placeholder='eMail', icon='envelope') }}
             {{ field('password', type='password', placeholder='Clave', icon='plane-lock') }}
+            {{ field('validate_password', type='password', placeholder='Repite Clave', icon='plane-lock') }}
 
                 <div class="field">
                     <label class="checkbox">
